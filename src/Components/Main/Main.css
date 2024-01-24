@@ -1,0 +1,228 @@
+.lock {
+  overflow: hidden;
+}
+.modal {
+  position: fixed;
+  margin: 0 auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.modalWindow {
+  margin: 10px;
+}
+.modalWindowExit {
+  position: relative;
+}
+.modalWindowExit button {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  padding: 7px 6px 2px 7px;
+  border-radius: 50%;
+}
+.modalWindowContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  max-width: 650px;
+  padding: 10px;
+  border-radius: 25px;
+  padding: 40px;
+}
+.modalWindowContentDescription {
+  display: flex;
+  justify-content: left;
+  align-content: left;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px 0;
+}
+.modalWindowContentDescription span {
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 0 5px;
+}
+.modalWindowContentTitle h2 {
+  font-size: 24px;
+}
+.modalWindowContentData {
+  display: flex;
+  justify-content: right;
+  align-content: right;
+  align-items: center;
+  margin: 10px 0;
+}
+.modalWindowContentData p {
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.modalWindowContentText {
+  width: 500px;
+  word-wrap: break-word;
+  height: 400px;
+  overflow-y: scroll;
+}
+.modalWindowContentText::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 50%;
+}
+.modalWindowContentText::-webkit-scrollbar-track {
+  background: transparent;
+}
+.modalWindowContentTitle {
+  text-align: center;
+}
+.modalWindowContentText p {
+  font-size: 16px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,
+    sans-serif;
+}
+.modalWindowContentDescriptionDecorate {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+.container-service {
+  max-width: 1230px;
+  padding: 0px 30px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.services {
+  padding: 90px 0px;
+  background-color: #f1f1f1;
+}
+.title_1 {
+  text-align: center;
+}
+.main_title {
+  margin-bottom: 40px;
+}
+.services_row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 40px;
+  grid-row-gap: 10px;
+}
+.service_card {
+  flex: 1 1 0;
+  min-width: 315px;
+}
+.service_card_img {
+  margin-bottom: 30px;
+}
+.service_card_title {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.service_card p {
+  line-height: 2;
+}
+/*Portfolio*/
+.portfolio {
+  padding: 90px 0px;
+  background-color: white;
+}
+.portfolio_title {
+  text-align: center;
+  margin-bottom: 70px;
+}
+.title_1 {
+  font-size: 34px;
+  font-weight: 600;
+}
+.project {
+  text-align: center;
+}
+.project + .project {
+  margin-top: 90px;
+}
+.project_title {
+  font-size: 18px;
+}
+.project_title a {
+  color: #000;
+  text-decoration: underline;
+}
+.dataOfProjects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+/*About Us*/
+
+.about {
+  padding: 90px 0px;
+  background-color: #f1f1f1;
+}
+.about_title {
+  text-align: center;
+  margin-bottom: 70px;
+}
+.about {
+  text-align: center;
+}
+.about + .about {
+  margin-top: 90px;
+}
+.about_title {
+  font-size: 18px;
+}
+.about_title a {
+  color: #000;
+  text-decoration: none;
+}
+.aboutContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.aboutContent {
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+}
+.aboutContent ul {
+  list-style-type: circle;
+}
+
+@media (max-width: 1150px) {
+  .services_row {
+    grid-template-columns: 1fr 1fr;
+  }
+  .modalWindowContentTitle {
+    padding: 10px 0;
+  }
+  .modalWindowContentText p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 750px) {
+  .services_row {
+    grid-template-columns: 1fr;
+  }
+  .modalWindowContent {
+    width: 350px;
+  }
+}
